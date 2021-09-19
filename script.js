@@ -1,5 +1,5 @@
 
-document.getElementById("find").addEventListener("click", getData)
+document.querySelector("#find").addEventListener("click", getData)
 
 
 //  empty output declared to be used for DOM image display
@@ -21,7 +21,7 @@ async function getData()
     //  variable to display image in DOM
 
         output =`${data[0].url}`    
-        document.getElementById("output").src = output ;
+        document.querySelector("#output").src = output ;
 
     } catch (error){
         console.log(error, " unable to fetch data")
